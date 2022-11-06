@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!--Remix Icon-->
+    <link rel="stylesheet" href="assets/fonts/remixicon.css" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--Responsive CSS-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+
+    <!--Nav Start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger py-lg-2 py-4">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <h6>Fuat Genc | <span>UI Designer</span></h6>
+        </a>
+        <button
+          class="btn navbar-toggler px-2"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="ri-menu-3-fill"></i>
+        </button>
+        <div
+          class="offcanvas offcanvas-start-lg bg-danger"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header d-flex d-lg-none">
+            <h5 class="offcanvas-title fs-6 px-3" id="offcanvasExampleLabel">
+              Fuat Genc | <span>UI Designer</span>
+            </h5>
+            <a
+              href="javascript:void(0) "
+              class="text-reset p-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="close"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#FFFFFF"
+                class="bi bi-x-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="offcanvas-body p-lg-0 d-lg-flex align-items-lg-center">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3 px-lg-2 active d-flex align-items-center"
+                  aria-current="page"
+                  href="index.html"
+                  ><span class="ms-lg-1">Ana Sayfa</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3 px-lg-2 d-flex align-items-center"
+                  aria-current="page"
+                  href="hakkimda.html"
+                  ><span class="ms-lg-1">Hakkımda</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3 px-lg-2 d-flex align-items-center"
+                  aria-current="page"
+                  href="portfolyo.html"
+                  ><span class="ms-lg-1">Portfolyo</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3 px-lg-2 d-flex align-items-center"
+                  aria-current="page"
+                  href="blog.html"
+                  ><span class="ms-lg-1">Blog</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3 px-lg-2 d-flex align-items-center"
+                  aria-current="page"
+                  href="iletisim.html"
+                  ><span class="ms-lg-1">İletişim</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="dark-mode ms-auto px-3 px-lg-0">
+              <li>
+                <!-- Dark Mode Switch Start -->
+                <div class="form-check form-switch">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="checkbox"
+                    onclick="toggleTheme()"
+                  />
+                  <label class="form-check-label" for="checkbox"></label>
+                </div>
+                <!-- Dark Mode Switch End -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Nav End-->
+
+    <!--Blog Cards Start-->
+    <section class="blog-cards py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div
+              class="sub-title justify-content-center d-flex align-items-center"
+            >
+              <i class="ri-asterisk"></i>
+              <p class="ms-2">Son Yazılarım</p>
+            </div>
+            <span class="left-to-right">
+              <span> </span>
+            </span>
+            <div class="full-content">
+              <h3 class="my-2">Blog</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2 gy-3">
+          <!--Blog Posts Start-->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="blog-card p-3 d-flex flex-column justify-content-around">
+              <a href="blog-detay.html">
+                <img src="assets/img/322 x 256.jpg" class="img-fluid card-img" alt="" />
+              </a>
+              <a href="blog-detay.html">
+                <h2 class="mt-2">Evrenin Parlak Güneşi Altında Teknoloji Nasıl Evrimleşti?
+
+                </h2>
+              </a>
+              <p class="excerpt my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <a href="/blog-detay.html" class="readmore-link">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="blog-card p-3 d-flex flex-column justify-content-around">
+              <a href="blog-detay.html">
+                <img src="assets/img/322 x 256.jpg" class="img-fluid card-img" alt="" />
+              </a>
+              <a href="blog-detay.html">
+                <h2 class="mt-2">WordPress Web Sitenizi Optimize Etmenin 7 Yolu
+
+                </h2>
+              </a>
+              <p class="excerpt my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <a href="/blog-detay.html" class="readmore-link">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="blog-card p-3 d-flex flex-column justify-content-around">
+              <a href="blog-detay.html">
+                <img src="assets/img/322 x 256.jpg" class="img-fluid card-img" alt="" />
+              </a>
+              <a href="blog-detay.html">
+                <h2 class="mt-2">Uygulamanızı 100 Milyon Kullanıcı İçin Oluşturmayın
+
+                </h2>
+              </a>
+              <p class="excerpt my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <a href="/blog-detay.html" class="readmore-link">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="blog-card p-3 d-flex flex-column justify-content-around">
+              <a href="blog-detay.html">
+                <img src="assets/img/322 x 256.jpg" class="img-fluid card-img" alt="" />
+              </a>
+              <a href="blog-detay.html">
+                <h2 class="mt-2">Evrenin Parlak Güneşi Altında Teknoloji Nasıl Evrimleşti?
+
+                </h2>
+              </a>
+              <p class="excerpt my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <a href="/blog-detay.html" class="readmore-link">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="blog-card p-3 d-flex flex-column justify-content-around">
+              <a href="blog-detay.html">
+                <img src="assets/img/322 x 256.jpg" class="img-fluid card-img" alt="" />
+              </a>
+              <a href="blog-detay.html">
+                <h2 class="mt-2">WordPress Web Sitenizi Optimize Etmenin 7 Yolu
+
+                </h2>
+              </a>
+              <p class="excerpt my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <a href="/blog-detay.html" class="readmore-link">Read More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="blog-card p-3 d-flex flex-column justify-content-around">
+              <a href="blog-detay.html">
+                <img src="assets/img/322 x 256.jpg" class="img-fluid card-img" alt="" />
+              </a>
+              <a href="blog-detay.html">
+                <h2 class="mt-2">Uygulamanızı 100 Milyon Kullanıcı İçin Oluşturmayın
+
+                </h2>
+              </a>
+              <p class="excerpt my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <a href="/blog-detay.html" class="readmore-link">Read More</a>
+            </div>
+          </div>
+          <!--Blog Posts End-->
+
+          <!--Pagination Start-->
+          <div class="col-lg-12">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Geri</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">İleri</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!--Pagination End-->
+
+        </div>
+      </div>
+    </section>
+    <!--Blog Cards End-->
+
+    <!--Footer Start-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="top">
+              <div class="sub-title d-flex align-items-center mb-4">
+                <i class="ri-asterisk"></i>
+                <p class="ms-2 sub-title">İletişim</p>
+              </div>
+              <a href="iletisim.html" class="footer-link"
+                >Hadi Çalışalım
+                <span class="align-middle"
+                  ><i class="ri-arrow-right-up-line"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-5" />
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row justify-content-between gy-4">
+
+              <!--About Start-->
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="footer-logo">
+                  <a href="index.html">
+                    <h6>Fuat Genc | <span>UI Designer</span></h6>
+                  </a>
+                  <p class="mt-2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Fugiat earum iure natus, error consectetur suscipit quas
+                    vitae nisi nemo provident!
+                  </p>
+                </div>
+              </div>
+              <!--About End-->
+
+              <!--Quick Menu Start-->
+              <div class="col-lg-auto col-md-6 col-sm-12">
+                <h5 class="menu-title mb-3">Hızlı Linkler</h5>
+                <ul class="footer-menu">
+                  <li class="footer-menu-item">
+                    <a href="index.html" class="footer-menu-link">Ana Sayfa</a>
+                  </li>
+                  <li class="footer-menu-item">
+                    <a href="hakkimda.html" class="footer-menu-link"
+                      >Hakkımda</a
+                    >
+                  </li>
+                  <li class="footer-menu-item">
+                    <a href="portfolyo.html" class="footer-menu-link"
+                      >Portfolyo</a
+                    >
+                  </li>
+                  <li class="footer-menu-item">
+                    <a href="iletisim.html" class="footer-menu-link"
+                      >İletişim</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--Quick Menu End-->
+
+              <!--Social Media Start-->
+              <div class="col-lg-auto col-md-6 col-sm-12">
+                <h5 class="menu-title mb-3">Social Media</h5>
+                <ul class="social-links">
+                  <li class="social-item">
+                    <a href="#" class="social-link">Facebook</a>
+                  </li>
+                  <li class="social-item">
+                    <a href="#" class="social-link">Twitter</a>
+                  </li>
+                  <li class="social-item">
+                    <a href="#" class="social-link">Youtube</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Social Media End-->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer End-->
+
+    <!--Bootstrap-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Lightbox -->
+    <script src="assets/js/lightbox.bundle.min.js"></script>
+    <!--Main JS-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
